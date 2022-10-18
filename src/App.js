@@ -30,7 +30,7 @@ function App() {
 
     function addTodo() {
         const name = inputRef.current.value;
-        if (name === '') return;
+        if (name === '' || name.trim() === '') return;
         setTodos(prevTodos => {
             return [...prevTodos, { id: v4(), name: name, complete: false }]
         });
