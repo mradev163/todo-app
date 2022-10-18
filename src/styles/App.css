@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+
+body {
+    font-family: "Monda", sans-serif;
+    background: #181824;
+    height: 100%;
+}
+
+.title {
+    font-size: 96px;
+    line-height: 156px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.todo-funcs {
+    display: flex;
+    justify-content: space-between;
+    background: #25273c;
+    border: 2px solid #ad02fe;
+    height: 60px;
+    align-items: center;
+    padding: 0 26px;
+}
+
+.App {
+    max-width: 666px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.todo-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-input {
+    width: 100%;
+    background: #25273c;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 68.56px;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 32px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 587px){
+    .todo-input{
+        
+    }
+}
+
+.todo-button {
+    width: 110px;
+    height: 68.56px;
+    background: rgba(90, 255, 49, 0.6);
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-clear {
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    background: none;
+    color: #ffffff;
+}
+
+.todo-items {
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.todo-item {
+    height: 82.49px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+    background: #25273C;
+}
+
+.checkbox{
+    width: 43.42px;
+    height: 43.42px;
+    border-radius: 100px;
+    margin: 0px 26px;
+}
+
+.todo-item label{
+    display: flex;
+    align-items: center;
+}
+
+.todo-name{
+    position: relative;
+}
+
+.todo-name.active{
+    color: rgba(15, 144, 162, 0.57);
+}
+
+.todo-name.active::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+    height: 1px;
+    background: gray;
+}
